@@ -9,15 +9,15 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use { 
-	  "rose-pine/neovim", 
-	  as = "rose-pine", 
+  use {
+	  "rose-pine/neovim",
+	  as = "rose-pine",
 	  config = function()
 		  vim.cmd('colorscheme rose-pine-moon')
 	  end
   }
   use (
-  'nvim-treesitter/nvim-treesitter', 
+  'nvim-treesitter/nvim-treesitter',
   {run = ':TSUpdate'}
   )
   use ('nvim-lua/plenary.nvim')
@@ -45,6 +45,5 @@ return require('packer').startup(function(use)
 	  "williamboman/mason.nvim",
 	  "williamboman/mason-lspconfig.nvim",
   }
-
-
+  use {'numToStr/Comment.nvim'}
 end)

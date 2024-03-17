@@ -22,7 +22,7 @@ require("mason").setup()
 require('mason-lspconfig').setup({
   -- Replace the language servers listed here
   -- with the ones you want to install
-  ensure_installed = { "lua_ls", "rust_analyzer", "clangd", "quick_lint_js"},
+  ensure_installed = { "lua_ls", "rust_analyzer", "clangd", "quick_lint_js", "dockerls", "docker_compose_language_service"},
   automatic_installation = true,
 
   handlers = {

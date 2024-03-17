@@ -1,2 +1,2 @@
-require("bamrouch.remap")
 require("bamrouch.set")
+require("bamrouch.remap")
